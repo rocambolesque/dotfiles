@@ -1,0 +1,19 @@
+# ignore case
+set completion-ignore-case on
+
+# similar files completion
+set completion-prefix-display-length 2
+
+# completion on first tab press
+set show-all-if-ambiguous on
+set show-all-if-unmodified on
+
+# underscore = hyphen
+set completion-map-case on
+
+# cycle through completion
+Control-j: menu-complete
+Control-k: menu-complete-backward
+
+# no beep/blink
+set bell-style none
