@@ -85,3 +85,13 @@ map <leader>b :tabnew<CR>
 map <leader>q :tabclose<CR>
 
 imap <D-V> ^O"+p"
+
+" php-cs-fixer
+let g:php_cs_fixer_path                   = "/usr/local/bin/php-cs-fixer"
+let g:php_cs_fixer_level                  = "all"                   
+let g:php_cs_fixer_config                 = "default"               
+let g:php_cs_fixer_php_path               = "php"                   
+let g:php_cs_fixer_fixers_list            = ""                      
+let g:php_cs_fixer_enable_default_mapping = 1
+let g:php_cs_fixer_dry_run                = 0
+let g:php_cs_fixer_verbose                = 0
