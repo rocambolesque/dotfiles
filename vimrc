@@ -19,6 +19,7 @@ Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-scripts/Lucius'
+Bundle 'stephpy/vim-php-cs-fixer'
 
 colorscheme lucius
 set relativenumber
