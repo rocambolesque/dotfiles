@@ -96,3 +96,12 @@ let g:php_cs_fixer_fixers_list            = ""
 let g:php_cs_fixer_enable_default_mapping = 1
 let g:php_cs_fixer_dry_run                = 0
 let g:php_cs_fixer_verbose                = 0
+
+" replaces arrows with pluses in nerdtree
+let g:NERDTreeDirArrows=0
+
+" increases nerdtree sidebar size
+let g:NERDTreeWinSize=40
+
+" makes backspace work
+set backspace=indent,eol,start
