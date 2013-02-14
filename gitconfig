@@ -4,11 +4,11 @@
 [merge]
     tool = vimdiff
 [diff]
-        tool = vimdiff
+    tool = vimdiff
 [difftool]
-        prompt = false
+    prompt = false
 [alias]
-        d = difftool
+    d = difftool
     st = status
     co = checkout
     ci = commit
@@ -17,17 +17,18 @@
     sl = stash list
     sa = stash apply
 [color]
-  branch = auto
-  status = auto
+    branch = auto
+    status = auto
 [color "branch"]
-  current = yellow reverse
-  local = yellow 
-  remote = green
+    current = yellow reverse
+    local = yellow 
+    remote = green
 [color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
+    added = yellow
+    changed = green
+    untracked = cyan
 [core]
-        editor = vim
+    editor = vim
+# pushes current branch by default
 [push]
-        default = current
+    default = current
