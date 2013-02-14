@@ -16,6 +16,7 @@
     p = push
     sl = stash list
     sa = stash apply
+    cop = checkout @{-1} # checkout previous branch
 [color]
     branch = auto
     status = auto
