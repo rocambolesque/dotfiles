@@ -15,11 +15,11 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'vim-scripts/taglist.vim'
 "FuzzyFinder requirement
 Bundle 'vim-scripts/L9' 
-Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-scripts/Lucius'
 Bundle 'stephpy/vim-php-cs-fixer'
+Bundle 'rocdose/easybuffer.vim'
 
 colorscheme lucius
 set relativenumber
@@ -66,7 +66,7 @@ let Tlist_Use_Right_Window = 1
 "xdebug
 let g:debuggerMaxDepth = 2
 "fuzzyfinder
-map <leader>f :FufBuffer<CR>
+map <leader>f :EasyBuffer<CR>
 
 
 
@@ -105,3 +105,6 @@ let g:NERDTreeWinSize=40
 
 " makes backspace work
 set backspace=indent,eol,start
+
+" excludes symfony1 cache dir
+let g:ctrlp_custom_ignore = '\v[\/]src/cache$'
