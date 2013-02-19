@@ -108,3 +108,11 @@ set backspace=indent,eol,start
 
 " excludes symfony1 cache dir
 let g:ctrlp_custom_ignore = '\v[\/]src/cache$'
+
+" template files
+" highlight template file keywords
+function! LoadTemplate()
+    silent! 0r ~/.vim/template/template.%:e
+    syn match Todo "%\u\+%" containedIn=ALL
+endfunction
+autocmd! BufNewFile * call LoadTemplate()
