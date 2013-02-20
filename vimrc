@@ -13,13 +13,12 @@ Bundle 'vim-scripts/Align'
 Bundle 'vim-scripts/phpfolding.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'vim-scripts/taglist.vim'
-"FuzzyFinder requirement
-Bundle 'vim-scripts/L9' 
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-scripts/Lucius'
 Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'rocdose/easybuffer.vim'
+Bundle 'itspriddle/vim-jquery'
 
 colorscheme lucius
 set relativenumber
