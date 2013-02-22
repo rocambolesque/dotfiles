@@ -18,7 +18,7 @@ Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-scripts/Lucius'
 Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'rocdose/easybuffer.vim'
-Bundle 'itspriddle/vim-jquery'
+Bundle 'Lokaltog/vim-easymotion'
 
 colorscheme lucius
 set relativenumber
