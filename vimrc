@@ -20,6 +20,10 @@ Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'rocdose/easybuffer.vim'
 Bundle 'Lokaltog/vim-easymotion'
 
+set encoding=utf-8
+setglobal fileencoding=utf-8
+set fileencodings=ucs-bom,utf-8,latin1
+
 colorscheme lucius
 set relativenumber
 set cursorline      " highlight current line
