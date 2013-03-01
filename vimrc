@@ -19,6 +19,7 @@ Bundle 'vim-scripts/Lucius'
 Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'rocdose/easybuffer.vim'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'beyondwords/vim-twig'
 
 set encoding=utf-8
 setglobal fileencoding=utf-8
