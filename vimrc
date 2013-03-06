@@ -20,6 +20,7 @@ Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'rocdose/easybuffer.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'beyondwords/vim-twig'
+Bundle 'airblade/vim-gitgutter'
 
 set encoding=utf-8
 setglobal fileencoding=utf-8
@@ -121,3 +122,8 @@ function! LoadTemplate()
     syn match Todo "%\u\+%" containedIn=ALL
 endfunction
 autocmd! BufNewFile * call LoadTemplate()
+
+let g:Powerline_symbols='fancy'
+
+" avoid weird colors in the signe column for vim-gitgutter 
+highlight clear SignColumn
