@@ -33,3 +33,5 @@
 # pushes current branch by default
 [push]
     default = current
+[web]
+	browser = chrome
