@@ -11,7 +11,6 @@ Bundle 'itspriddle/vim-jquery'
 Bundle 'bronson/vim-visual-star-search'
 Bundle 'vim-scripts/Align'
 Bundle 'vim-scripts/phpfolding.vim'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/AutoComplPop'
@@ -112,8 +111,8 @@ let g:NERDTreeWinSize=40
 " makes backspace work
 set backspace=indent,eol,start
 
-" excludes symfony1 cache dir
-let g:ctrlp_custom_ignore = '\v[\/]src/cache$'
+" excludes symfony1 and symfony2 cache dir
+let g:ctrlp_custom_ignore = '\v[\/]src/cache|src/app/cache$'
 
 " template files
 " highlight template file keywords
@@ -122,8 +121,6 @@ function! LoadTemplate()
     syn match Todo "%\u\+%" containedIn=ALL
 endfunction
 autocmd! BufNewFile * call LoadTemplate()
-
-let g:Powerline_symbols='fancy'
 
 " avoid weird colors in the signe column for vim-gitgutter 
 highlight clear SignColumn
