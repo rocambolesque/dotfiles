@@ -30,8 +30,9 @@
     untracked = cyan
 [core]
     editor = vim
-# pushes current branch by default
 [push]
+    default = current
+[pull]
     default = current
 [web]
 	browser = chrome
