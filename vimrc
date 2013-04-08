@@ -20,6 +20,7 @@ Bundle 'rocdose/easybuffer.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'beyondwords/vim-twig'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'docteurklein/vim-phpunit'
 
 set encoding=utf-8
 setglobal fileencoding=utf-8
@@ -124,3 +125,6 @@ autocmd! BufNewFile * call LoadTemplate()
 
 " avoid weird colors in the signe column for vim-gitgutter 
 highlight clear SignColumn
+
+" phpunit compilation
+com! -nargs=* Phpunit make -c app <q-args> | cw
