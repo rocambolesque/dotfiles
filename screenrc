@@ -14,18 +14,12 @@ hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)
 
 # windows
 screen -t bash        0
-screen -t vim         1
-screen -t git         2
-screen -t sql         3
-screen -t log         4
+screen -t code        1
+screen -t test        2
+screen -t cvs         3
+screen -t db          4
+screen -t log         5
 
 # screens startup commands
-select 0
-exec pwd
-
 select 1
 exec vim
-
-# screen displays last selected window
-select 2
-exec git st
