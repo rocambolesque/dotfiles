@@ -50,8 +50,7 @@ set incsearch       " incremental search
 
 let mapleader = ","
 let g:mapleader = ","
-filetype plugin on  
-filetype indent on
+filetype plugin on
 
 "" plugins
 "ctrlp
