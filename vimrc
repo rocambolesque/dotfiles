@@ -10,13 +10,12 @@ Bundle 'mileszs/ack.vim'
 Bundle 'itspriddle/vim-jquery'
 Bundle 'bronson/vim-visual-star-search'
 Bundle 'vim-scripts/Align'
-Bundle 'vim-scripts/phpfolding.vim'
+Bundle 'rayburgemeestre/phpfolding.vim'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-scripts/Lucius'
 Bundle 'stephpy/vim-php-cs-fixer'
-Bundle 'rocdose/easybuffer.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'beyondwords/vim-twig'
 "Bundle 'airblade/vim-gitgutter'
@@ -50,8 +49,7 @@ set incsearch       " incremental search
 
 let mapleader = ","
 let g:mapleader = ","
-filetype plugin on  
-filetype indent on
+filetype plugin on
 
 "" plugins
 "ctrlp
