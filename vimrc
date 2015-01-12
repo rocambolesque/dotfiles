@@ -1,3 +1,5 @@
+filetype off
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin() 
 
@@ -13,6 +15,8 @@ Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-scripts/Lucius'
 Bundle 'bling/vim-airline'
+
+call vundle#end()
 
 set encoding=utf-8
 setglobal fileencoding=utf-8
