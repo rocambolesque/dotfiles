@@ -1,20 +1,21 @@
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin() 
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'kien/ctrlp.vim'
-Bundle 'mileszs/ack.vim'
-Bundle 'bronson/vim-visual-star-search'
-Bundle 'rayburgemeestre/phpfolding.vim'
-Bundle 'vim-scripts/matchit.zip'
-Bundle 'vim-scripts/AutoComplPop'
-Bundle 'vim-scripts/Lucius'
-Bundle 'bling/vim-airline'
+Plugin 'gmarik/vundle'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'bronson/vim-visual-star-search'
+Plugin 'rayburgemeestre/phpfolding.vim'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'vim-scripts/AutoComplPop'
+Plugin 'vim-scripts/Lucius'
+Plugin 'bling/vim-airline'
+Plugin 'aperezdc/vim-template'
 
 call vundle#end()
 
@@ -123,3 +124,6 @@ highlight clear SignColumn
 
 " phpunit compilation
 com! -nargs=* Phpunit make -c app <q-args> | cw
+
+" vim-fugitive vertical diff
+set diffopt+=vertical
