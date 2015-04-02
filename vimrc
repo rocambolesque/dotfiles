@@ -16,6 +16,8 @@ Plugin 'vim-scripts/AutoComplPop'
 Plugin 'vim-scripts/Lucius'
 Plugin 'bling/vim-airline'
 Plugin 'aperezdc/vim-template'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'hdima/python-syntax'
 
 call vundle#end()
 
