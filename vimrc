@@ -62,7 +62,7 @@ let g:ctrlp_prompt_mappings = {
 "nerdtree
 map <leader>n :NERDTreeToggle<CR>
 "ack
-map <leader>k :Ack
+map <leader>k :Ack!
 "taglist
 map <leader>ll :TlistToggle<CR>
 let Tlist_Use_Right_Window = 1
@@ -129,3 +129,16 @@ com! -nargs=* Phpunit make -c app <q-args> | cw
 
 " vim-fugitive vertical diff
 set diffopt+=vertical
+
+ab ipdb import ipdb;ipdb.set_trace()
+
+let NERDTreeIgnore = ['__pycache__', '\.pyc$']
+
+" Parenthesis highlight
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+" Python syntax highlight
+let python_highlight_all = 1
