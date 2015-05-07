@@ -53,11 +53,6 @@ filetype plugin on
 "" plugins
 "ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-"opens new tab
-let g:ctrlp_prompt_mappings = {
-  \ 'AcceptSelection("e")': [],
-  \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
-  \ }
 
 "nerdtree
 map <leader>n :NERDTreeToggle<CR>
@@ -142,3 +137,5 @@ au Syntax * RainbowParenthesesLoadBraces
 
 " Python syntax highlight
 let python_highlight_all = 1
+
+vnoremap <Leader>a y:Ack <C-r>=fnameescape(@")<CR>
