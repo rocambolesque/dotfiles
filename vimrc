@@ -18,6 +18,7 @@ Plugin 'bling/vim-airline'
 Plugin 'aperezdc/vim-template'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'hdima/python-syntax'
+Plugin 'tmhedberg/SimpylFold'
 
 call vundle#end()
 
@@ -139,3 +140,6 @@ au Syntax * RainbowParenthesesLoadBraces
 let python_highlight_all = 1
 
 vnoremap <Leader>a y:Ack <C-r>=fnameescape(@")<CR>
+
+" python folding
+let g:SimpylFold_docstring_preview = 1
