@@ -45,7 +45,7 @@ setup_vim () {
 
 install_vim_bundles () {
     info 'installing vim bundles'
-    vim -c 'BundleInstall' -c 'qa'
+    vim -c 'PluginInstall' -c 'qa'
     success 'bundles installed'
 }
 

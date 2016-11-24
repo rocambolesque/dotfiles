@@ -3,21 +3,17 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'bronson/vim-visual-star-search'
-Plugin 'rayburgemeestre/phpfolding.vim'
-Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'vim-scripts/Lucius'
-Plugin 'bling/vim-airline'
-Plugin 'aperezdc/vim-template'
+Plugin 'jnurmine/Zenburn'
 Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'hdima/python-syntax'
 Plugin 'tmhedberg/SimpylFold'
 
 call vundle#end()
@@ -26,11 +22,10 @@ set encoding=utf-8
 setglobal fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,latin1
 
-colorscheme lucius
+"colorscheme lucius
 set relativenumber
 set cursorline      " highlight current line
 set laststatus=2    " always show the statusline
-syntax enable       " enable syntax hl
 set background=dark
 set t_Co=256        " colors!
 set mouse=a         " enable mouse
@@ -42,10 +37,13 @@ set tabstop=4       " 4 space tab
 set smarttab
 set linebreak       " break long lines
 set textwidth=500
-set cindent
 set showmatch       " set show matching parenthesis
 set hlsearch        " highlight search terms
 set incsearch       " incremental search
+set softtabstop=4
+set autoindent
+syntax enable       " enable syntax hl
+colors zenburn
 
 let mapleader = ","
 let g:mapleader = ","
@@ -59,15 +57,6 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 map <leader>n :NERDTreeToggle<CR>
 "ack
 map <leader>k :Ack!
-"taglist
-map <leader>ll :TlistToggle<CR>
-let Tlist_Use_Right_Window = 1
-"xdebug
-let g:debuggerMaxDepth = 2
-"fuzzyfinder
-map <leader>f :EasyBuffer<CR>
-
-
 
 "" movements
 " move a line
@@ -83,8 +72,6 @@ map <C-l> :tabnext<CR>
 map <C-h> :tabprev<CR>
 map <leader>b :tabnew<CR>
 map <leader>q :tabclose<CR>
-
-imap <D-V> ^O"+p"
 
 " php-cs-fixer
 let g:php_cs_fixer_path                   = "/usr/local/bin/php-cs-fixer"
@@ -106,27 +93,15 @@ let g:NERDTreeWinSize=40
 " makes backspace work
 set backspace=indent,eol,start
 
-" excludes symfony1 and symfony2 cache dir
-let g:ctrlp_custom_ignore = '\v[\/]src/cache|src/app/cache$'
-
-" template files
-" highlight template file keywords
-function! LoadTemplate()
-    silent! 0r ~/.vim/template/template.%:e
-    syn match Todo "%\u\+%" containedIn=ALL
-endfunction
-autocmd! BufNewFile * call LoadTemplate()
-
-" avoid weird colors in the signe column for vim-gitgutter 
-highlight clear SignColumn
-
-" phpunit compilation
-com! -nargs=* Phpunit make -c app <q-args> | cw
+" excludes cache/vendor directories
+let g:ctrlp_custom_ignore = '\v[\/]src/cache|src/app/cache|vendors|node_modules|bower_components|__pycache__|\.pyc$'
+let g:ctrlp_working_path_mode = ''
 
 " vim-fugitive vertical diff
 set diffopt+=vertical
 
-ab ipdb import ipdb;ipdb.set_trace()
+" ipdb shortcut
+ab ipdb import ipdb;ipdb.set_trace() # DEBUG
 
 let NERDTreeIgnore = ['__pycache__', '\.pyc$']
 
@@ -136,10 +111,8 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-" Python syntax highlight
-let python_highlight_all = 1
-
 vnoremap <Leader>a y:Ack <C-r>=fnameescape(@")<CR>
 
 " python folding
 let g:SimpylFold_docstring_preview = 1
+autocmd FileType python setlocal foldmethod=indent et cinwords=def,class
