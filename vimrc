@@ -16,6 +16,7 @@ Plugin 'jnurmine/Zenburn'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 
