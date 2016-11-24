@@ -15,6 +15,7 @@ Plugin 'vim-scripts/Lucius'
 Plugin 'jnurmine/Zenburn'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
 
