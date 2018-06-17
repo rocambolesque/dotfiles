@@ -104,6 +104,7 @@ set diffopt+=vertical
 
 " ipdb shortcut
 ab ipdb import ipdb;ipdb.set_trace() # DEBUG
+ab pdb import pdb;pdb.set_trace() # DEBUG
 
 let NERDTreeIgnore = ['__pycache__', '\.pyc$']
 
