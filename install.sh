@@ -77,6 +77,12 @@ install_vim_bundles_requirements () {
     fi
 }
 
+setup_tmux() {
+    info 'setting up tmux'
+    git clone https://github.com/tmux-plugins/tmux-resurrect ~/tmux-resurrect/
+    success 'tmux setup'
+}
+
 install
 setup_vim
 install_vim_bundles
