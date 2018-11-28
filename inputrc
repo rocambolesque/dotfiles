@@ -1,12 +1,12 @@
 # ignore case
 set completion-ignore-case on
 
+# pdbpp is unhappy with the following
 # similar files completion
-set completion-prefix-display-length 2
-
+#set completion-prefix-display-length 2
 # completion on first tab press
-set show-all-if-ambiguous on
-set show-all-if-unmodified on
+#set show-all-if-ambiguous on
+#set show-all-if-unmodified on
 
 # underscore = hyphen
 set completion-map-case on
