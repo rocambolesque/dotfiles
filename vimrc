@@ -17,6 +17,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tell-k/vim-autoflake'
 
 call vundle#end()
 
@@ -119,3 +120,8 @@ vnoremap <Leader>a y:Ack <C-r>=fnameescape(@")<CR>
 " python folding
 let g:SimpylFold_docstring_preview = 1
 autocmd FileType python setlocal foldmethod=indent et cinwords=def,class
+
+" autoflake
+let g:autoflake_remove_unused_variables=1
+let g:autoflake_remove_all_unused_imports=1
+let g:autoflake_disable_show_diff=1
