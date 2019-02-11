@@ -1,31 +1,8 @@
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'kien/ctrlp.vim'
-Plugin 'mileszs/ack.vim'
-Plugin 'bronson/vim-visual-star-search'
-Plugin 'vim-scripts/AutoComplPop'
-Plugin 'vim-scripts/Lucius'
-Plugin 'jnurmine/Zenburn'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tell-k/vim-autoflake'
-
-call vundle#end()
-
 set encoding=utf-8
 setglobal fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,latin1
 
-"colorscheme lucius
+colorscheme lucius
 set relativenumber
 set cursorline      " highlight current line
 set laststatus=2    " always show the statusline
@@ -46,7 +23,6 @@ set incsearch       " incremental search
 set softtabstop=4
 set autoindent
 syntax enable       " enable syntax hl
-colors zenburn
 
 let mapleader = ","
 let g:mapleader = ","
@@ -108,12 +84,6 @@ ab ipdb import ipdb;ipdb.set_trace() # DEBUG
 ab pdb import pdb;pdb.set_trace() # DEBUG
 
 let NERDTreeIgnore = ['__pycache__', '\.pyc$']
-
-" Parenthesis highlight
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
 
 vnoremap <Leader>a y:Ack <C-r>=fnameescape(@")<CR>
 

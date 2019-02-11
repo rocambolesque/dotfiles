@@ -1,0 +1,39 @@
+[submodule "vim/pack/my-plugins/start/vim-fugitive"]
+	path = vim/pack/my-plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/pack/shapeshed/start/vim-airline"]
+	path = vim/pack/shapeshed/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/pack/my-plugins/start/nerdtree"]
+	path = vim/pack/my-plugins/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "vim/pack/my-plugins/start/nerdcommenter"]
+	path = vim/pack/my-plugins/start/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
+[submodule "vim/pack/my-plugins/start/ctrlp.vim"]
+	path = vim/pack/my-plugins/start/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule "vim/pack/my-plugins/start/vim-visual-star-search"]
+	path = vim/pack/my-plugins/start/vim-visual-star-search
+	url = https://github.com/bronson/vim-visual-star-search
+[submodule "vim/pack/my-plugins/start/AutoComplPop"]
+	path = vim/pack/my-plugins/start/AutoComplPop
+	url = https://github.com/vim-scripts/AutoComplPop
+[submodule "vim/pack/my-plugins/start/Lucius"]
+	path = vim/pack/my-plugins/start/Lucius
+	url = https://github.com/vim-scripts/Lucius
+[submodule "vim/pack/my-plugins/start/Zenburn"]
+	path = vim/pack/my-plugins/start/Zenburn
+	url = https://github.com/jnurmine/Zenburn
+[submodule "vim/pack/my-plugins/start/rainbow_parentheses.vim"]
+	path = vim/pack/my-plugins/start/rainbow_parentheses.vim
+	url = https://github.com/kien/rainbow_parentheses.vim
+[submodule "vim/pack/my-plugins/start/SimpylFold"]
+	path = vim/pack/my-plugins/start/SimpylFold
+	url = https://github.com/tmhedberg/SimpylFold
+[submodule "vim/pack/my-plugins/start/vim-airline-themes"]
+	path = vim/pack/my-plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "vim/pack/my-plugins/start/vim-autoflake"]
+	path = vim/pack/my-plugins/start/vim-autoflake
+	url = https://github.com/tell-k/vim-autoflake
