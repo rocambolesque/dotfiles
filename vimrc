@@ -95,3 +95,9 @@ autocmd FileType python setlocal foldmethod=indent et cinwords=def,class
 let g:autoflake_remove_unused_variables=1
 let g:autoflake_remove_all_unused_imports=1
 let g:autoflake_disable_show_diff=1
+
+" Parenthesis highlight
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
