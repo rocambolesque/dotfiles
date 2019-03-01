@@ -39,6 +39,7 @@ install () {
 
 setup_vim () {
     info "setting up vim"
+    git submodule update --init
     vim_version=`vim --version | head -1 | grep -o '[[:digit:]]\.[[:digit:]]'` 
     info 'vim version: '$vim_version
     ln -s vim/pack/ ~/.vim/pack
