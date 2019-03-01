@@ -103,5 +103,3 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 set -o vi
-
-source ~/.git-completion.bash
