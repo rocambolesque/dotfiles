@@ -101,3 +101,15 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" centers the current pane as the middle 2 of 4 imaginary columns should be called in a window with a single pane
+function CenterPane()
+	lefta vnew
+	wincmd w
+	exec 'vertical resize '. string(&columns * 0.75)
+endfunction
+nnoremap <leader>c :call CenterPane()<cr>
+" split bar styling
+" https://vi.stackexchange.com/questions/2938/can-the-split-separator-in-vim-be-less-than-a-full-column-wide
+set fillchars+=vert:│
+hi VertSplit ctermbg=NONE guibg=NONE
